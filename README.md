@@ -1,1 +1,1 @@
-# MBZUAI Robotics Perception Group
+# MBZUAI Embodied Perception Group
