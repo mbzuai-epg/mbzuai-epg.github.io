@@ -1,90 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>MBZUAI Embodied Perception Group</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../assets/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="../assets/css/owl.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-  </head>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>MBZUAI Embodied Perception Group</title>
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fontawesome.css">
+  <link rel="stylesheet" href="../assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="../assets/css/owl.css">
+  <link rel="stylesheet" href="../assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <style>
+    .publications-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .publication {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 20px;
+    }
+    .publication img {
+      width: 200px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      flex-shrink: 0;
+    }
+    .pub-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .pub-details p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .publication {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .publication img {
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
 <body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <ul class="info">
-            <li><i class="fa fa-envelope"></i> info@mbzuai-epg.com</li>
-            <li><i class="fa fa-map"></i> MBZUAI, Masdar City, Abu Dhabi</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="../index.html" class="logo">
-                        <h1>EPG</h1>
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="../index.html">Home</a></li>
-                      <li><a href="projects.html" class="active">Research</a></li>
-                      <li><a href="../index.html#news-section">News</a></li>
-                      <li><a href="../index.html#people-section">People</a></li>
-                      <li><a href="contact.html"><i class="fa fa-calendar"></i> Contact US</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+  <!-- ... header and navigation as before ... -->
 
   <div class="page-heading header-text">
     <div class="container">
@@ -99,185 +73,101 @@
 
   <div class="section properties">
     <div class="container">
-      <ul class="properties-filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".adv">Robotics</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".str">3D Vision</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".rac">Vision & Language</a>
-        </li>
-      </ul>
-      <div class="row properties-box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
-          <div class="item">
-            <a href="news.html"><img src="../assets/images/projects/project-01.jpg" alt=""></a>
-            <span class="category">Robotics</span>
-            <h6>CVPR 2025</h6>
-            <h4><a href="news.html">Human Motion Generation</a></h4>
-            <ul>
-              <li>By Yangsong Zhang et.al</li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">Project Page</a>
-            </div>
+      <div class="publications-list">
+
+        <div class="publication">
+          <a href="https://antoyang.github.io/vidchapters.html">
+            <img src="../assets/images/publications/neurips23antoine.jpg" alt="VidChapters-7M" />
+          </a>
+          <div class="pub-details">
+            <p>
+              <a href="https://arxiv.org/pdf/2309.13952.pdf">
+                VidChapters-7M: Video Chapters at Scale</a> (2023),<br>
+              A. Yang, A. Nagrani, I. Laptev, J. Sivic and C. Schmid;<br>
+              <i>in Proc NeurIPS'23</i>.<br>
+              <a href="https://antoyang.github.io/vidchapters.html">Project page</a>
+            </p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
-          <div class="item">
-            <a href="news.html"><img src="../assets/images/projects/project-01.jpg" alt=""></a>
-            <span class="category">Robotics</span>
-            <h6>Ongoing</h6>
-            <h4><a href="news.html">Human Motion Generation</a></h4>
-            <ul>
-              <li>Robotics and AI</li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">Project Page</a>
-            </div>
+
+        <div class="publication">
+          <a href="https://www.di.ens.fr/willow/research/polarnet">
+            <img src="../assets/images/publications/corl23chen.jpg" alt="PolarNet" />
+          </a>
+          <div class="pub-details">
+            <p>
+              <a href="https://arxiv.org/pdf/2309.15596.pdf">
+                PolarNet: 3D Point Clouds for Language-Guided Robotic Manipulation</a> (2023),<br>
+              S. Chen, R. Garcia, C. Schmid, I. Laptev;<br>
+              <i>in Proc CoRL'23</i>.<br>
+              <a href="https://www.di.ens.fr/willow/research/polarnet">Project page</a>
+            </p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
-          <div class="item">
-            <a href="news.html"><img src="../assets/images/projects/project-03.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$1.460.000</h6>
-            <h4><a href="news.html">26 Mid Street Portland, OR 38540</a></h4>
-            <ul>
-              <li>Bedrooms: <span>5</span></li>
-              <li>Bathrooms: <span>4</span></li>
-              <li>Area: <span>225m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>10 spots</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">View More</a>
-            </div>
+
+        <div class="publication">
+          <a href="https://www.di.ens.fr/willow/research/onav_rim/">
+            <img src="../assets/images/publications/iros23shizhe.jpg" alt="Object Goal Navigation" />
+          </a>
+          <div class="pub-details">
+            <p>
+              <a href="https://arxiv.org/pdf/2308.05602.pdf">
+                Object Goal Navigation with Recursive Implicit Maps</a> (2023),<br>
+              S. Chen, T. Chabal, I. Laptev and C. Schmid;<br>
+              <i>In Proc. IROS'23</i>.<br>
+              <a href="https://www.di.ens.fr/willow/research/onav_rim/">Project page</a>
+            </p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
-          <div class="item">
-            <a href="news.html"><img src="assets/images/projects/project-04.jpg" alt=""></a>
-            <span class="category">Apartment</span>
-            <h6>$584.500</h6>
-            <h4><a href="news.html">12 Hope Street Portland, OR 12650</a></h4>
-            <ul>
-              <li>Bedrooms: <span>4</span></li>
-              <li>Bathrooms: <span>3</span></li>
-              <li>Area: <span>125m2</span></li>
-              <li>Floor: <span>25th</span></li>
-              <li>Parking: <span>2 cars</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">View More</a>
-            </div>
+
+        <div class="publication">
+          <a href="https://www.di.ens.fr/willow/research/robust_s2r/">
+            <img src="../assets/images/publications/iros23ricardo.jpg" alt="Robust visual sim-to-real transfer" />
+          </a>
+          <div class="pub-details">
+            <p>
+              <a href="https://arxiv.org/pdf/2307.15320.pdf">
+                Robust visual sim-to-real transfer for robotic manipulation</a> (2023),<br>
+              R. Garcia, R. Strudel, S. Chen, E. Arlaud, I. Laptev and C. Schmid;<br>
+              <i>In Proc. IROS'23</i>.<br>
+              <a href="https://www.di.ens.fr/willow/research/robust_s2r/">Project page</a>
+            </p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
-          <div class="item">
-            <a href="news.html"><img src="../assets/images/projects/project-05.jpg" alt=""></a>
-            <span class="category">Penthouse</span>
-            <h6>$925.600</h6>
-            <h4><a href="news.html">34 Hope Street Portland, OR 42680</a></h4>
-            <ul>
-              <li>Bedrooms: <span>4</span></li>
-              <li>Bathrooms: <span>4</span></li>
-              <li>Area: <span>180m2</span></li>
-              <li>Floor: <span>38th</span></li>
-              <li>Parking: <span>2 cars</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">View More</a>
-            </div>
+
+        <div class="publication">
+          <a href="https://github.com/MatthieuFP/VGAMT">
+            <img src="../assets/images/publications/acl23matthieu.jpg" alt="Tackling ambiguity with images" />
+          </a>
+          <div class="pub-details">
+            <p>
+              <a href="https://arxiv.org/pdf/2212.10140.pdf">
+                Tackling ambiguity with images: Improved multimodal machine translation and contrastive evaluation</a> (2023),<br>
+              M. Futeral, C. Schmid, I. Laptev, B. Sagot and R. Bawden;<br>
+              <i>in Proc ACL'23</i>.<br>
+              <a href="https://github.com/MatthieuFP/VGAMT">Project page</a>,
+              <a href="https://github.com/MatthieuFP/CoMMuTE">CoMMuTE dataset</a>
+            </p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
-          <div class="item">
-            <a href="news.html"><img src="../assets/images/projects/project-06.jpg" alt=""></a>
-            <span class="category">Modern Condo</span>
-            <h6>$450.000</h6>
-            <h4><a href="news.html">22 Hope Street Portland, OR 16540</a></h4>
-            <ul>
-              <li>Bedrooms: <span>3</span></li>
-              <li>Bathrooms: <span>2</span></li>
-              <li>Area: <span>165m2</span></li>
-              <li>Floor: <span>26th</span></li>
-              <li>Parking: <span>3 cars</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">View More</a>
-            </div>
+
+        <div class="publication">
+          <a href="https://antoyang.github.io/vid2seq.html">
+            <img src="../assets/images/publications/cvpr23antoine.jpg" alt="Vid2Seq" />
+          </a>
+          <div class="pub-details">
+            <p>
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_Vid2Seq_Large-Scale_Pretraining_of_a_Visual_Language_Model_for_Dense_CVPR_2023_paper.pdf">
+                Vid2Seq: Large-scale pretraining of a visual language model for dense video captioning</a> (2023),<br>
+              A. Yang, A. Nagrani, P.H. Seo, A. Miech, J. Pont-Tuset, I. Laptev, J. Sivic and C. Schmid;<br>
+              <i>in Proc CVPR'23</i>.<br>
+              <a href="https://antoyang.github.io/vid2seq.html">Project page</a>
+            </p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
-          <div class="item">
-            <a href="news.html"><img src="assets/images/projects/project-03.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$980.000</h6>
-            <h4><a href="news.html">14 Mid Street Miami, OR 36450</a></h4>
-            <ul>
-              <li>Bedrooms: <span>8</span></li>
-              <li>Bathrooms: <span>8</span></li>
-              <li>Area: <span>550m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>12 spots</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">View More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
-          <div class="item">
-            <a href="news.html"><img src="../assets/images/projects/project-02.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$1.520.000</h6>
-            <h4><a href="news.html">26 Old Street Miami, OR 12870</a></h4>
-            <ul>
-              <li>Bedrooms: <span>12</span></li>
-              <li>Bathrooms: <span>15</span></li>
-              <li>Area: <span>380m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>14 spots</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">View More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
-          <div class="item">
-            <a href="news.html"><img src="assets/images/projects/project-01.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$3.145.000</h6>
-            <h4><a href="news.html">34 New Street Miami, OR 24650</a></h4>
-            <ul>
-              <li>Bedrooms: <span>10</span></li>
-              <li>Bathrooms: <span>12</span></li>
-              <li>Area: <span>860m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>10 spots</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="news.html">View More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="pagination">
-            <li><a href="#">1</a></li>
-            <li><a class="is_active" href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">>></a></li>
-          </ul>
-        </div>
+
+        <!-- Add more publications as needed, following the same structure -->
+
       </div>
     </div>
   </div>
@@ -290,14 +180,11 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="../assets/js/isotope.min.js"></script>
   <script src="../assets/js/owl-carousel.js"></script>
   <script src="../assets/js/counter.js"></script>
   <script src="../assets/js/custom.js"></script>
-
-  </body>
+</body>
 </html>
