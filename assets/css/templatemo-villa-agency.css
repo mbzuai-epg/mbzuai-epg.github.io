@@ -420,7 +420,10 @@ Header Style
 
 .background-header .main-nav .logo h1 {
   line-height: 80px;
+  align-items: center;
+  align-content: center;
 }
+
 
 .header-area .main-nav ul.nav {
   flex-basis: 100%;
